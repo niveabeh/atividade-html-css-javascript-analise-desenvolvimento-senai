@@ -9,7 +9,7 @@ function validaProc() {
         do {
             let nota = parseFloat(prompt("Turma " + turma + " - Aluno " + contador + " - Informe a nota:"));
             acumuladorNotas += nota;
-            contador++;
+             contador++;
         } while (contador <= qtdAlunos);
 
         if (turma == 1) {
@@ -46,7 +46,7 @@ function validaProc() {
         "Turma 1: " + mediaTurma1.toFixed(2) + " (Alunos: " + totalAlunosTurma1 + ")\n" +
         "Turma 2: " + mediaTurma2.toFixed(2) + " (Alunos: " + totalAlunosTurma2 + ")\n" +
         "Turma 3: " + mediaTurma3.toFixed(2) + " (Alunos: " + totalAlunosTurma3 + ")\n\n" +
-        "Total de alunos em turmas com média >= 7: " + totalAlunosMediaSete + "\n" +
+        "Total de alunos em turmas com média 7: " + totalAlunosMediaSete + "\n" +
         "Média geral da escola: " + mediaGeral.toFixed(2)
     );
 
