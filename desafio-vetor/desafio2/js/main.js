@@ -11,24 +11,17 @@ function validaProc() {
          numero[i] = parseInt(prompt("Informe um número: "))
       }
       let buscaNum = parseInt(prompt("Informe o número que deseja buscar: "));
-      let boolean = false;
-      let index = [], contador = 1;
-
+      let index = [];
+      let contador = 0;
       for(let i = 0; i < 10; i++){
+         console.log(`${numero[i]}`)
          if(numero[i] == buscaNum){
-            index[i] = i ;
+            index[i] = i;
             contador++;
-            boolean = true;
          }
-      } 
-      if(boolean == true){
-         alert(`Número: ${buscaNum}\nO valor foi encontrado: ${contador}\nIndex: ${index[]}`)
-      }else{
-         alert(`O valor não foi encontrado`)
       }
-      for(let i = 0; i < index.length; i++){
-         
-      }   
+      console.log(`Numero de busca: ${buscaNum}\nQuantidade: ${contador}\nIndex: `);
+      index.forEach(num => console.log(num));
       return false;
      
 }
