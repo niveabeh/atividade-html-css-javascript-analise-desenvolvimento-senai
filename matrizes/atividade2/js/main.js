@@ -14,12 +14,12 @@ function validaProc() {
          }
       }
       let numero = parseInt(prompt("Informe a linha que deseja imprimir: "))
-
+      let guardar = 0;
       for(let i = 0; i < linha;i++){  
          if(i == numero){
             for(let y = 0; y <coluna; y++){
                guardar += matriz[numero][y]  
-               document.write(resp[i][y]+"&nbsp&nbsp");
+               document.write(guardar+"&nbsp&nbsp");
             }
          } 
          document.write("<br>");
