@@ -18,12 +18,12 @@ function validaProc() {
       for(let i = 0; i < linha;i++){  
          if(i == numero){
             for(let y = 0; y <coluna; y++){
-               guardar += matriz[numero][y]  
-               document.write(guardar+"&nbsp&nbsp");
+               guardar = matriz[i][y] +  guardar 
+              
             }
          } 
-         document.write("<br>");
       }
+      document.write(guardar+"&nbsp&nbsp");
       return false;
      
 }
