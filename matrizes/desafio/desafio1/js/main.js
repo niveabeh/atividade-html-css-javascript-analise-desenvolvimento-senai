@@ -10,23 +10,14 @@ function validaProc() {
    for(let i = 0; i < 2; i++){
       matriz[i] = []
       for(let y = 0; y< 3; y++){
-            matriz[i][y] = parseFloat(prompt(`Informe a renda\nAndar - ${i+1}/ Ap ${y+1}: `));
-      }
-   }
-   for(let i = 0; i < 2; i++){
-      for(let y = 0; y< 3; y++){
-         if(matriz[i][y] == null){
-            console.log("entrou")
-         }else{
-            console.log("saiu")
-         }    
+         matriz[i][y] = parseFloat(prompt(`Informe a renda\nAndar - ${i+1}/ Ap ${y+1}: `));
+         contador++
+         acumulador = acumulador + matriz[i][y];
       }
    }
    let media = acumulador / contador;
-   console.log(`Total de declarantes: ${contador}\nRenda total: ${acumulador}\nMedia: ${media}`);
-   // matriz[i][y];
-   // contador++
-   // acumulador = acumulador + matriz[i][y];
+   console.log(`Total de declarantes: ${contador}\nRenda total: ${acumulador}\nMedia: ${media.toFixed(2)}`);
+   
 
    return false;
      
